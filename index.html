@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Draw</title>
+    <link rel="icon" href="cs-icon-18.jpg">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="titulo">
+        <h1>Player Pick's</h1>
+    </div>
+    <div id="updates">
+        <h2 id="up">Updates</h2>
+        <p>
+            2/07/2022 Version 1.0 <br>
+            3/07/2022 Version 1.1 <br>
+            4/07/2022 Version 1.2 <br>
+            5/07/2022 Version 1.3 <br>
+            <a href="patch.html"> <button id="button" class="btn btn-outline-light">Patch Notes</button></a>
+        </p>
+    </div>
+    <div id="infos">
+        <h2 id="use">How to use?</h2>
+        <p id="p2">
+            Enter the players names with commas, then draw.
+        </p>
+    </div>
+    <div id="info">
+        <input type="text" placeholder="Nome do Player" id="player">
+        <button id="s"  onclick="pickrandom(); reset_animation();" class="btn btn-outline-light">Draw</button>
+        <label for="checkbox" style="color: white; margin-left: 1%;"><input type="checkbox" id="checkbox" name="checkbox" class="checkbox11" oninput="doStuff()"> Animation</label>
+    </div>
+    <div id="players">
+        <tr>
+        <td colspan="2" class="p"><p id="p1" class="form-control border-success;">Players:</p></td>
+        </tr>
+    </div>
+    <div>
+        <p id="resultado" class="">
+
+        </p>
+    </div>
+    <div>
+    <footer>
+        Made with love by Glx ❤
+    </footer>
+    </div>
+</body>
+</html>

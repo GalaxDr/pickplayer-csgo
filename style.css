@@ -1,0 +1,149 @@
+html, body {
+    font-family: "Times New Roman", serif !important;
+    height: 100%;
+}
+body {
+    background-image: url(bg.jpg);
+    opacity: 90%;
+    height: auto;
+    width: auto;
+    background-size:cover;
+}
+#titulo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    margin-top: 2%;
+}
+#info {
+    text-align: center;
+    align-content: center;
+    alignment: center;
+    margin: auto;
+    width: 50%;
+
+
+}
+#player {
+    margin-right: 7%;
+
+}
+#p1 {
+    text-align: center;
+    color: white;
+    width: 30%;
+    border: 5px solid #ffe000;
+    padding: 30px;
+    margin: 30px auto auto;
+    font-size: 20pt;
+    text-shadow: 2px 2px #000000;
+    background-color: transparent !important;
+
+}
+footer {
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    background-color: black;
+    opacity: 30%;
+    color: white;
+    height: 2.5rem;
+    margin-right: 100%;
+    width: 100%;
+}
+#resultado {
+    text-align: center;
+    color: white;
+    width: 30%;
+    border: 5px solid #ffe000;
+    padding: 30px;
+    margin: 30px auto auto;
+    font-size: 20pt;
+    text-shadow: 2px 2px #000000;
+    word-wrap: break-word;
+    background-color: transparent;
+}
+#updates {
+    position: relative;
+    text-align: end;
+    color: white;
+    font-size: 20pt;
+    text-shadow: 2px 2px #000000;
+    float: right;
+    margin: auto;
+    width: 20%;
+
+}
+#up {
+    text-align: center;
+    font-size: 35pt;
+}
+#players {
+    word-wrap: break-word;
+}
+#infos {
+    text-align: end;
+    color: white;
+    margin: auto;
+    font-size: 20pt;
+    text-shadow: 2px 2px #000000;
+    word-wrap: break-word;
+    float: left;
+    width: 30%;
+}
+#use {
+    text-align: center;
+}
+#p2{
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 20pt;
+}
+#use {
+    font-size: 35pt;
+}
+#button {
+    text-align: center;
+    color: white;
+}
+
+#patches{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    color: white;
+    float: left;
+    font-size: 15pt;
+}
+#s {
+    text-align: center;
+}
+.animated{
+    animation: animacao 5s linear;
+}
+body.preload *{
+    animation-duration: 0s !important;
+    -webkit-animation-duration: 0s !important;
+    transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;}
+@keyframes animacao {
+    from {
+        backface-visibility: visible;
+        background-color: black; !important;
+        opacity: 0;
+        color:black;
+    }
+    to {
+        backface-visibility: hidden;
+        opacity: 100%;
+        color:white;
+    }
+}
